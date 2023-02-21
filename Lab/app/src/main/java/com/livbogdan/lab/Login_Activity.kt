@@ -30,7 +30,9 @@ class Login_Activity : AppCompatActivity() {
             // Perform input validation and user authentication here
 
             // If input is valid and user is authenticated, start main activity
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Login_Activity::class.java).apply {
+                putExtra("username", email)
+            }
             startActivity(intent)
             finish()
         }

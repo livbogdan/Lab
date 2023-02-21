@@ -15,7 +15,8 @@
         android:layout_height="211dp"
         android:layout_marginBottom="100sp"
         android:translationY="-100sp"
-        app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg" />
+        app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg"
+        android:contentDescription="TODO" />
 
 
     <com.google.android.material.card.MaterialCardView
