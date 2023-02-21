@@ -1,44 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/oxcs3z"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/SignButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Signin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/loginButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
-
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/SignButton"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875" />
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="275dp"
-        android:layout_height="281dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="211dp"
+        android:layout_marginBottom="100sp"
+        android:translationY="-100sp"
+        app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#4DFFFFFF"
+        android:elevation="5dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:translationY="-190sp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Welcome"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Please enter your name."
+                android:textColor="#616161"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:imeOptions="actionGo"
+                    android:inputType="textCapWords"
+                    android:textColor="#000000"
+                    android:textColorHint="#3F51B5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/black"
+                android:text="Start"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
