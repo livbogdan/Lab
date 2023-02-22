@@ -9,15 +9,15 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="211dp"
         android:layout_marginBottom="100sp"
+        android:contentDescription="TODO"
         android:translationY="-100sp"
-        app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg"
-        android:contentDescription="TODO" />
-
+        app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -54,7 +54,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="24dp"
                 android:gravity="center"
-                android:text="Please enter your name."
+                android:text="To Champion review"
                 android:textColor="#616161"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -64,18 +64,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/et_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:imeOptions="actionGo"
-                    android:inputType="textCapWords"
-                    android:textColor="#000000"
-                    android:textColorHint="#3F51B5" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="5dp" />
 
             <Button
                 android:id="@+id/btn_start"
