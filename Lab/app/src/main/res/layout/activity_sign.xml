@@ -7,43 +7,56 @@
     android:background="@drawable/oxcs3z"
     tools:context=".Sign_Activity">
 
-    <EditText
-        android:id="@+id/SignEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="75sp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:textAlignment="textStart"
-        app:layout_constraintBottom_toTopOf="@+id/SignTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/SignTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="75sp"
-        android:layout_marginBottom="228dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="279dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
         app:layout_constraintBottom_toTopOf="@+id/signinbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <EditText
+                android:id="@+id/SignEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/SignTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="128dp"
         android:text="Sign In"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,5 +67,7 @@
         android:text="SignIn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
