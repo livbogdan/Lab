@@ -3,11 +3,7 @@ package com.livbogdan.lab
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
 import com.livbogdan.lab.databinding.ActivityLoginBinding
-import com.livbogdan.lab.databinding.ActivitySignBinding
 
 class Login_Activity : AppCompatActivity() {
 
@@ -55,7 +51,7 @@ class Login_Activity : AppCompatActivity() {
         }
         binding.loginButton.setOnClickListener {
             if (logInCheck(userName.text.toString(),password.text.toString())){
-                val goToAboutPage = Intent(this,About_Activity::class.java)
+                val goToAboutPage = Intent(this,ChampionsActivity::class.java)
                 startActivity(goToAboutPage)
             }
         }
