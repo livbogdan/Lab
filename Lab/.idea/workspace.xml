@@ -2,17 +2,25 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
+<<<<<<< Updated upstream
       <config>
         <device id="pixel_6_pro" />
         <option name="nonWearDeviceLastStateName" value="Portrait" />
       </config>
+=======
+      <config />
+>>>>>>> Stashed changes
     </shared>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="490ae3ad-43ab-4777-8c86-9cb7a556fd42" name="Changes" comment="Almost done with Lab 1" />
+=======
+    <list default="true" id="8438113b-e398-4346-abe1-b33496cb0dc4" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +32,7 @@
       <ProjectState />
     </projectState>
   </component>
+<<<<<<< Updated upstream
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -80,10 +89,17 @@
   </component>
   <component name="ProjectId" id="2LyQVKuAdYcpIPg3g9I2CThcD3z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LxT3YWh8Nu2CwXjp8Fa5yUc1Qg" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ResourceManagerPrefKey.ResourceType&quot;: &quot;DRAWABLE&quot;,
@@ -111,6 +127,17 @@
       <recent name="com.livbogdan.lab" />
     </key>
   </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true"
+  }
+}]]></component>
+>>>>>>> Stashed changes
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Lab.app.main" />
@@ -174,6 +201,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="490ae3ad-43ab-4777-8c86-9cb7a556fd42" name="Changes" comment="" />
       <created>1676840864298</created>
       <option name="number" value="Default" />
@@ -204,4 +232,14 @@
     <MESSAGE value="Almost done with Lab 1" />
     <option name="LAST_COMMIT_MESSAGE" value="Almost done with Lab 1" />
   </component>
+=======
+      <changelist id="8438113b-e398-4346-abe1-b33496cb0dc4" name="Changes" comment="" />
+      <created>1676811536043</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676811536043</updated>
+    </task>
+    <servers />
+  </component>
+>>>>>>> Stashed changes
 </project>
