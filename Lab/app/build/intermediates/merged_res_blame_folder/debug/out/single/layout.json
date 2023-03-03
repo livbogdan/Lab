@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.livbogdan.lab.app-mergeDebugResources-49:/layout/champions_activity.xml",
+        "source": "com.livbogdan.lab.app-main-52:/layout/champions_activity.xml"
+    },
+    {
+        "merged": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-mergeDebugResources-49:/layout/activity_sign.xml",
+        "source": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-main-52:/layout/activity_sign.xml"
+    },
+    {
+        "merged": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-mergeDebugResources-49:/layout/champions_activity.xml",
+        "source": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-main-52:/layout/champions_activity.xml"
+    },
+    {
+        "merged": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-mergeDebugResources-49:/layout/activity_about.xml",
+        "source": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-main-52:/layout/activity_about.xml"
+    },
+    {
+        "merged": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-mergeDebugResources-49:/layout/activity_login.xml",
+        "source": "/Users/ii3ogdan/.gradle/daemon/7.5/com.livbogdan.lab.app-main-52:/layout/activity_login.xml"
+    }
+]
