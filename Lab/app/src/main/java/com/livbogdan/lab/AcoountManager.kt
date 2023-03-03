@@ -17,17 +17,15 @@ class User (var name: String, var password: String) {
 }
 
 fun logInCheck (userName:String, password: String): Boolean {
-    println("Checking")
-    for (x in AcoountManager.allUsers){
-        println(x.name)
-        println(userName)
-        if (x.name == userName && x.password == password ){
-
+    println("Account Checking")
+    for (x in AcoountManager.allUsers)
+    {
+        if (x.name == userName && x.password == password )
+        {
             AcoountManager.currentUser = x
-
             return true
         }
-
+        println("Username is: ${x.name} Password is: ${x.password}")
     }
     return false
 }
