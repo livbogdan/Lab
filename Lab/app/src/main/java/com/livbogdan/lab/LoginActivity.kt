@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
         binding.loginButton.setOnClickListener {
             if (logInCheck(userName.text.toString(),password.text.toString())){
                 val goToAboutPage = Intent(this,ChampionsActivity::class.java)
-                Toast.makeText(this, "Login Successfully.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Login .", Toast.LENGTH_LONG).show()
                 startActivity(goToAboutPage)
             }
             else

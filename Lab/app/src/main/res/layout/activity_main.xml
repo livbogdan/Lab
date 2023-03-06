@@ -10,14 +10,29 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="211dp"
-        android:layout_marginBottom="100sp"
-        android:contentDescription="TODO"
-        android:translationY="-100sp"
-        app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg" />
+        android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.livbogdan.lab.MainMenuFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:contentDescription="TODO"
+            android:translationY="-100sp"
+            app:srcCompat="@drawable/league_of_legends_wild_rift_logo_svg"
+            tools:layout_editor_absoluteY="791dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -72,8 +87,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/black"
+                android:backgroundTint="@color/teal_200"
                 android:text="Start"
-                android:textColor="@android:color/white"
+                android:textColor="#B11919"
                 android:textSize="18sp" />
 
 
