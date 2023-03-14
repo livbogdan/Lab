@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class AboutFragment : Fragment() {
 
@@ -12,10 +13,15 @@ class AboutFragment : Fragment() {
 		inflater: LayoutInflater,
 		container: ViewGroup?,
 		savedInstanceState: Bundle?
-	): View {
+	): View? {
 		// Inflate the layout for this fragment
 
-		val view = inflater.inflate(R.layout.fragment_about, container, false)
+		val view: View = inflater.inflate(R.layout.fragment_about, container, false)
+
+		view.findViewById<FloatingActionButton>(R.id.fabClose).setOnClickListener() {
+			println("happend")
+			parentFragmentManager.beginTransaction().remove(this).commit()
+		}
 
 		return view
 	}

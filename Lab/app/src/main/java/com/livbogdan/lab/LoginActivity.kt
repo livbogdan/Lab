@@ -27,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
         val btnCreateFragment = binding.aboutfragmentbtn
         val fcvSpawnFragment = binding.fragmentContainerView
 
+
         binding.signInButton.setOnClickListener {
             val goToSignUp = Intent(this,SignActivity::class.java)
             startActivity(goToSignUp)
@@ -54,8 +55,20 @@ class LoginActivity : AppCompatActivity() {
 
     private fun createAboutFragment(fragmentContainer: FragmentContainerView) {
         supportFragmentManager.commit {
-            setReorderingAllowed(true)
-            add(fragmentContainer.id, AboutFragment())
+            if(supportFragmentManager.findFragmentByTag("MyTag") == null) {
+                println("true is same as null")
+                supportFragmentManager.commit {
+                    setReorderingAllowed(true)
+                    add(fragmentContainer.id, AboutFragment(), "MyTag")
+                }
+            }
+            else
+            {
+                println("falseis not same null")
+                supportFragmentManager.beginTransaction().remove(
+                    supportFragmentManager.findFragmentByTag("MyTag")!!
+                ).commit()
+            }
         }
     }
 

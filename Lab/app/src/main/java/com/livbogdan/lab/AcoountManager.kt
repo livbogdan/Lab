@@ -13,7 +13,7 @@ object AcoountManager {
 
 
 class User (var name: String, var password: String) {
-    var house: String = "HufflePuff" //For now every user becomes HufflePuff :)
+    var house: String = "HufflePuff"
 }
 
 fun logInCheck (userName:String, password: String): Boolean {
