@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutFragment"
+    android:background="@color/purple_200">
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="about"
+            android:textSize="40sp"
+            android:layout_marginRight="10sp"
+            />
+
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/aboutBtn"
-            android:layout_width="166dp"
-            android:layout_height="72dp"
-            android:backgroundTint="@color/teal_200"
-            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:fabSize="mini"
+            app:fabCustomSize="40sp"
+
+            android:backgroundTint="@color/teal_700"
+
+            android:src="@drawable/ic_launcher_foreground"
+
+            />
 
 
-            android:contentDescription="@string/app_name"
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-            android:focusable="true"
-            app:fabCustomSize="100dp"
-            app:fabSize="auto" />
-
-        <TextView
-            android:layout_width="271dp"
-            android:layout_height="73dp"
-            android:text="About"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textSize="40sp"
-            android:textStyle="bold|italic" />
-    </LinearLayout>
 
 </FrameLayout>

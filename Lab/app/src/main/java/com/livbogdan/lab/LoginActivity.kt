@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.fragment.app.FragmentContainerView
+import androidx.fragment.app.commit
 import com.google.android.material.snackbar.Snackbar
 import com.livbogdan.lab.databinding.ActivityLoginBinding
 
@@ -21,6 +23,9 @@ class LoginActivity : AppCompatActivity() {
 
         val userName = binding.emailEditText
         val password = binding.passwordEditText
+
+        val btnCreateFragment = binding.aboutfragmentbtn
+        val fcvSpawnFragment = binding.fragmentContainerView
 
         binding.signInButton.setOnClickListener {
             val goToSignUp = Intent(this,SignActivity::class.java)
@@ -40,8 +45,19 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        
+        btnCreateFragment.setOnClickListener() {
+            createAboutFragment(fcvSpawnFragment)
+        }
+
 
     }
+
+    private fun createAboutFragment(fragmentContainer: FragmentContainerView) {
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            add(fragmentContainer.id, AboutFragment())
+        }
+    }
+
 
 }
